@@ -1,0 +1,46 @@
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 120px);
+}
+
+.title {
+  padding: 2rem;
+  color: rgb(0, 95, 139);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.calculator-grid>button {
+  background: rgb(39, 48, 56);
+  font-size: 2rem;
+  border: 2px solid rgb(201, 87, 34);
+  outline: none;
+  color: white;
+}
+
+.tres-rows {
+  grid-row: span 4;
+}
+
+.cinco-columns {
+  grid-column: span 5;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}

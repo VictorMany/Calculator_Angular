@@ -1,0 +1,11 @@
+<div class="list-group" style="margin: 3rem">
+   <button type="button" class="list-group-item list-group-item-action active">
+      Lista de Operaciones
+   </button>
+   <button type="button" *ngFor="let item of  (this.operations$ | async); index as i;"
+      class="list-group-item list-group-item-action">{{item}}</button>
+</div>
+
+<button class="btn btn-primary" (click)="backToCalculator()">
+   Volver
+</button>

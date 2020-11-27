@@ -1,0 +1,37 @@
+<div class="row">
+   <div class="col">
+      <div>
+         <h1 class="title">CALCULADORA</h1>
+      </div>
+   </div>
+
+   <div class="col">
+      <button class="btn btn-primary" style="margin-top: 3rem;" (click)="goToHistory()">
+         Ver Historial
+      </button>
+   </div>
+</div>
+
+<div class="calculator-grid">
+   <div class="output">
+      <div class="current-operand">{{resultado}}</div>
+   </div>
+
+   <button (click)="onConcat(1)">1</button>
+   <button (click)="onConcat(2)">2</button>
+   <button (click)="onConcat(3)">3</button>
+   <button (click)="onConcat(100)">+</button>
+   <button (click)="onDoOperation()" class="tres-rows">=</button>
+   <button (click)="onConcat(4)">4</button>
+   <button (click)="onConcat(5)">5</button>
+   <button (click)="onConcat(6)">6</button>
+   <button (click)="onConcat(200)">-</button>
+   <button (click)="onConcat(7)">7</button>
+   <button (click)="onConcat(8)">8</button>
+   <button (click)="onConcat(9)">9</button>
+   <button (click)="onConcat(300)">/</button>
+   <button id="punto" (click)="onConcat(400)">.</button>
+   <button (click)="onConcat(0)">0</button>
+   <button (click)="borrar()">CE</button>
+   <button (click)="onConcat(500)">X</button>
+</div>
